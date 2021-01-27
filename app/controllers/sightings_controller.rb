@@ -3,4 +3,5 @@ class SightingsController < ApplicationController
     sighting = Sighting.find(params[:id])
     render json: SightingSerialiazer.new(sighting)
   end
+  
 end
